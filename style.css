@@ -1,0 +1,97 @@
+/*---------- CONTAINER ---------- */
+#container {
+	max-width: 600px;
+	height: 400px;
+	margin: 0 auto;
+	display: grid;
+	border: 1px solid #ccc;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+@media screen and (max-width: 992px) and (min-width: 
+
+200px;) {
+  #container {
+    flex: 50%;
+  }
+}
+/* ---------- FIM ----------*/
+
+
+/*---------- AVATAR ----------*/
+/*.flex img {
+	width: 50px;
+	height: 50px;
+	border-radius: 90px;
+	background-color: #cc66cc;
+	background-image: url('rachel.jpg');
+	background-size: cover;*/
+	/*align-items: flex-start;
+	flex: 0;   flex valores 0 ou 1
+	
+} 
+@media screen and (max-width: 992px) and (min-width: 
+
+200px;) {
+  .flex img {
+    flex: 50%;
+  }
+}*/
+
+	.flex > div{
+	width: 50px;
+	height: 50px;
+	border-radius: 90px;
+	display: inline-flex;
+  	animation: bounce 1s;
+  	animation-direction: alternate;
+  	animation-timing-function: cubic-bezier(.5,0.05,1,.5);
+  	animation-iteration-count: infinite;
+}
+
+   .flex > div:nth-child(1){ background : #009246; }
+   .flex > div:nth-child(2){ background : #F1F2F1; }
+   .flex > div:nth-child(3){ background : #CE2B37; }
+
+   .flex > div:hover
+   {
+   height: 200px;
+   }
+   @keyframes bounce {
+  from { transform: translate3d(0, 0, 0);     }
+  to   { transform: translate3d(0, 200px, 0); }
+}
+/*---------- PODIO ---------- */
+/*.podio {
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end; bottom to top*/
+	/* justify-content: flex-end; 
+}
+@media screen and (max-width: 992px) and (min-width: 
+
+200px;) {
+  .podio {
+    flex: 50%;
+  }
+}*/
+
+/*---------- FIM ---------- */
+
+/*---------- ANIMAÇÃO ----------
+.podio img { animation: animacao 5s ease forwards 
+
+alternate; 
+}
+
+@keyframes animacao {
+   from { 
+    height: 5px;
+  }
+   to { 
+    height: 300px;
+  }
+}*/
+/* ---------- FIM ----------*/
